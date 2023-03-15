@@ -1,0 +1,999 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+    <title>Ny Times - Bootstrap4</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+        integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.min.js"
+        integrity="sha384-+sLIOodYLS7CIrQpBjl+C7nPvqq+FbNUBDunl/OZv93DB7Ln/533i8e/mZXLi/P+"
+        crossorigin="anonymous"></script>
+
+    <style>
+        hr.double {
+            border-top: 3px double black;
+        }
+
+        hr.doublegray {
+            border-top: 3px double lightgray;
+        }
+
+        hr.black {
+            border-top: 1px solid black;
+        }
+
+        hr.gray {
+            border-top: 1px solid lightgray;
+        }
+
+        .btn-custom {
+            font-size: .75rem;
+            padding: .1rem;
+        }
+
+        .rightColumn {
+            border-left: 1px solid rgb(226, 226, 226);
+            padding-left: 10px;
+        }
+
+        .widthImage {
+            max-width: 100%;
+            margin-top: 5px;
+            margin-bottom: 5px;
+        }
+
+        .heading {
+            color: black;
+            font-size: 1.5rem;
+            line-height: 1.15em;
+            font-weight: 1.15em;
+        }
+
+        .heading:hover {
+            color: #5A5A5A;
+        }
+
+        .subHeading {
+            color: #5A5A5A;
+            font-size: 0.875rem;
+            line-height: 1.1875rem;
+            letter-spacing: 0.1px;
+            margin: 0;
+            padding: 0;
+            position: relative;
+        }
+
+        .timeRead {
+            color: #727272;
+            font-size: 0.625rem;
+            line-height: 1.25em;
+            letter-spacing: 0.1em;
+            text-transform: uppercase;
+            margin: 0;
+            margin-top: 0.25rem;
+        }
+
+        .linkDecoration {
+            text-decoration: none;
+            color: black;
+        }
+
+        .linkDecoration:hover {
+            text-decoration: none;
+            color: black;
+        }
+
+        .middlePageList {
+            color: black;
+            font-size: 0.75rem;
+            line-height: 0.75em;
+            margin-top: 0;
+        }
+
+        .author {
+            margin: 0;
+            margin-bottom: 0px;
+            color: #727272;
+            font-weight: 700;
+            text-transform: uppercase;
+            line-height: 1.35em;
+            letter-spacing: 1px;
+        }
+
+        .authorImage {
+            border-radius: 50%;
+            max-width: 100%;
+            margin-top: 5px;
+            margin-bottom: 5px;
+        }
+    </style>
+
+</head>
+
+<header>
+    <!--Navbar-->
+    <div class="container">
+        <nav class="navbar navbar-expand-sm bg-light">
+
+            <!-- Links -->
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Link 1</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Link 2</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Link 3</a>
+                </li>
+            </ul>
+
+        </nav>
+    </div>
+
+    <!--Logo-->
+    <div class="container" style="text-align: center;">
+
+        <img src="https://upload.wikimedia.org/wikipedia/commons/7/77/The_New_York_Times_logo.png" style="width: 50%;">
+
+    </div>
+
+    <!--Menu Header-->
+    <div class="container">
+
+        <hr class="gray" />
+
+        <div class="container">
+            <ul class="list-inline" style="text-align: center;">
+                <li class="list-inline-item menu">
+                    <a href="#" class="btn btn-light btn-custom" role="button">World</a>
+                </li>
+                <li class="list-inline-item menu">
+                    <a href="#" class="btn btn-light btn-custom" role="button">U.S.</a>
+                </li>
+                <li class="list-inline-item menu">
+                    <a href="#" class="btn btn-light btn-custom" role="button">Politics</a>
+                </li>
+                <li class="list-inline-item menu">
+                    <a href="#" class="btn btn-light btn-custom" role="button">N.Y.</a>
+                </li>
+                <li class="list-inline-item menu">
+                    <a href="#" class="btn btn-light btn-custom" role="button">Bussines</a>
+                </li>
+                <li class="list-inline-item menu">
+                    <a href="#" class="btn btn-light btn-custom" role="button">Opinion</a>
+                </li>
+                <li class="list-inline-item menu">
+                    <a href="#" class="btn btn-light btn-custom" role="button">Science</a>
+                </li>
+                <li class="list-inline-item menu">
+                    <a href="#" class="btn btn-light btn-custom" role="button">Sports</a>
+                </li>
+                <li class="list-inline-item menu">
+                    <a href="#" class="btn btn-light btn-custom" role="button">Arts</a>
+                </li>
+                <li class="list-inline-item menu">
+                    <a href="#" class="btn btn-light btn-custom" role="button">Books</a>
+                </li>
+                <li class="list-inline-item menu">
+                    <a href="#" class="btn btn-light btn-custom" role="button">Style</a>
+                </li>
+                <li class="list-inline-item menu">
+                    <a href="#" class="btn btn-light btn-custom" role="button">Food</a>
+                </li>
+                <li class="list-inline-item menu">
+                    <a href="#" class="btn btn-light btn-custom" role="button">Travel</a>
+                </li>
+                <li class="list-inline-item menu">
+                    <a href="#" class="btn btn-light btn-custom" role="button">Magazine</a>
+                </li>
+                <li class="list-inline-item menu">
+                    <a href="#" class="btn btn-light btn-custom" role="button">Real State</a>
+                </li>
+                <li class="list-inline-item menu "
+                    style="border-left: 1px solid rgb(226, 226, 226); padding-left: 6px;">
+                    <a href="#" class="btn btn-light btn-custom" role="button"> Cooking</a>
+                </li>
+                <li class="list-inline-item menu">
+                    <a href="#" class="btn btn-light btn-custom" role="button">The Athletic</a>
+                </li>
+                <li class="list-inline-item menu">
+                    <a href="#" class="btn btn-light btn-custom" role="button">Wirecutter</a>
+                </li>
+                <li class="list-inline-item menu">
+                    <a href="#" class="btn btn-light btn-custom" role="button">Games</a>
+                </li>
+            </ul>
+        </div>
+
+        <hr class="double" />
+    </div>
+
+</header>
+
+<body>
+
+    <!--Noticias-->
+    <div class="container">
+        <div class="row">
+            <!--Coluna Esquerda-->
+            <div class="col-sm-8">
+                <div class="row">
+                    <div class="col-sm-4">
+                        <a class="linkDecoration" href="#">
+                            <h5 class="heading">After Days of Panic, Midsize Banks See Stocks Rise</h5>
+                            <h6 class="subHeading">The specter of a billowing crisis over the banking industry appeared
+                                to
+                                ease, at least for the moment, as pressure lifted on midsize lenders.</h6>
+                            <p class="timeRead">4 min read</p>
+                        </a>
+                        <hr class="gray" />
+                        <a class="linkDecoration" href="#">
+                            <h5 class="heading">Analysis: As banking turmoil became a flash point in America’s culture
+                                wars,
+                                conservative presidential hopefuls pounced.</h5>
+                            <p class="timeRead">6 min read</p>
+                        </a>
+                    </div>
+                    <div class="col-sm-8">
+                        <a class="linkDecoration" href="#">
+                            <img src="https://static01.nyt.com/images/2023/03/14/business/regional-bank-stocks-day2-promo/regional-bank-stocks-day2-promo-threeByTwoSmallAt2X-v5.png?format=pjpg&quality=75&auto=webp&disable=upscale"
+                                class="widthImage">
+                        </a>
+                    </div>
+                </div>
+
+                <hr class="black" />
+
+                <div class="row">
+                    <div class="col-sm-4">
+                        <a class="linkDecoration" href="#">
+                            <h5 class="heading">Russian Warplane Hits American Drone Over Black Sea, U.S. Says</h5>
+                            <h6 class="subHeading">The incident was the first known physical contact between the two
+                                militaries since the war in Ukraine began last year.</h6>
+                            <p class="timeRead">5 min read</p>
+                        </a>
+                        <hr class="gray" />
+                        <a class="linkDecoration" href="#">
+                            <h5 class="heading">As Russian Shelling Intensifies, True Liberation Eludes a Ukrainian City
+                            </h5>
+                            <h6 class="subHeading">Months after Ukrainian forces pushed Russian occupiers out of
+                                Kherson, the city remains very much a war zone.</h6>
+                            <p class="timeRead">3 min read</p>
+                        </a>
+                        <hr class="gray" />
+                        <a class="linkDecoration" href="#">
+                            <h5 class="heading">Gov. Ron DeSantis of Florida, backing away from Ukraine, drew swift
+                                condemnations from establishment Republicans.</h5>
+                            <p class="timeRead">5 min read</p>
+                        </a>
+                    </div>
+                    <div class="col-sm-8">
+                        <img src="https://static01.nyt.com/images/2023/03/14/multimedia/14dc-drone-lhzj/14dc-drone-lhzj-threeByTwoSmallAt2X.jpg?format=pjpg&quality=75&auto=webp&disable=upscale"
+                            class="widthImage">
+                    </div>
+                </div>
+
+                <hr class="black" />
+
+                <div class="row">
+                    <div class="col-sm-4">
+                        <a class="linkDecoration" href="#">
+                            <h5 class="heading">OpenAI Releases GPT-4, Months After Stunning Silicon Valley With ChatGPT
+                            </h5>
+                            <h6 class="subHeading">The system will up the ante in the race to embrace artificial
+                                intelligence and decide who will be the next generation of leaders in the technology
+                                industry.</h6>
+                            <p class="timeRead">6 min read</p>
+                        </a>
+                        <hr class="gray" />
+                        <a class="linkDecoration" href="#">
+                            <h5 class="heading">10 Ways GPT-4 Is Impressive but Still Flawed</h5>
+                            <h6 class="subHeading">OpenAI has improved the technology that powers its online chatbot in
+                                notable ways. It’s more accurate, but it still makes things up.</h6>
+                            <p class="timeRead">5 min read</p>
+                        </a>
+                    </div>
+                    <div class="col-sm-8">
+                        <video class="widthImage" autoplay muted
+                            src="https://vp.nyt.com/video/2023/03/14/106859_1_00gpt4-hp-promo_wg_720p.mp4"></video>
+                    </div>
+                </div>
+
+                <hr class="black" />
+
+                <div class="row">
+                    <div class="container">
+                        <ul class="list-inline">
+                            <li class="list-inline-item menu">
+                                <a href="#" class="linkDecoration middlePageList" style="font-weight: bold;">A.I. and
+                                    Chatbots</a>
+                            </li>
+                            <li class="list-inline-item menu">
+                                <a href="#" class="linkDecoration middlePageList">An Unsettling Chat With Bing</a>
+                            </li>
+                            <li class="list-inline-item menu">
+                                <a href="#" class="linkDecoration middlePageList">How Chatbots Work</a>
+                            </li>
+                            <li class="list-inline-item menu">
+                                <a href="#" class="linkDecoration middlePageList">Spotting A.I.-Generated Text
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-sm-4">
+                        <a class="linkDecoration" href="#">
+                            <h5 class="heading">At Wellesley College, a Fight Over Whether to Admit Trans Men</h5>
+                            <h6 class="subHeading">Students will vote on a proposal to consider admitting all nonbinary
+                                and transgender applicants. Opponents say the school’s mission is to educate women.</h6>
+                            <p class="timeRead">5 min read</p>
+                        </a>
+                    </div>
+                    <div class="col-sm-8">
+                        <img src="https://static01.nyt.com/images/2023/03/14/multimedia/14nat-wellesley-college-02-hbvq/14nat-wellesley-college-02-hbvq-threeByTwoSmallAt2X-v3.jpg?format=pjpg&quality=75&auto=webp&disable=upscale"
+                            class="widthImage">
+                    </div>
+                </div>
+
+                <hr class="black" />
+
+                <div class="row">
+                    <div class="col-sm-4">
+                        <a class="linkDecoration" href="#">
+                            <h5 class="heading">Biden Issues Executive Order to Strengthen Background Checks for Guns
+                            </h5>
+                            <h6 class="subHeading">President Biden announced minor steps designed to improve enforcement
+                                of existing gun laws during a trip to the site of a mass shooting in Monterey Park,
+                                Calif.</h6>
+                            <p class="timeRead">5 min read</p>
+                        </a>
+                    </div>
+                    <div class="col-sm-8">
+                        <img src="https://static01.nyt.com/images/2023/03/14/multimedia/14dc-biden-fvpq/14dc-biden-fvpq-threeByTwoSmallAt2X.jpg?format=pjpg&quality=75&auto=webp&disable=upscale"
+                            class="widthImage">
+                    </div>
+                </div>
+
+                <hr class="black" />
+
+                <div class="row">
+                    <div class="container">
+                        <ul class="list-inline">
+                            <li class="list-inline-item menu">
+                                <a href="#" class="linkDecoration middlePageList" style="font-weight: bold;">U.S. Winter
+                                    Storms</a>
+                            </li>
+                            <li class="list-inline-item menu">
+                                <a href="#" class="linkDecoration middlePageList">How Much Snow Will You Get?</a>
+                            </li>
+                            <li class="list-inline-item menu">
+                                <a href="#" class="linkDecoration middlePageList">Atmospheric Rivers, Explained</a>
+                            </li>
+                            <li class="list-inline-item menu">
+                                <a href="#" class="linkDecoration middlePageList">Extreme Weather Guide</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-sm-4">
+                        <a class="linkDecoration" href="#">
+                            <h5 class="heading">More Flooding Is Feared as Latest Storm Pummels California</h5>
+                            <h6 class="subHeading">Another in a series of “atmospheric river” storms swept much of the
+                                state with strong winds, heavy rain at lower elevations and snow in the mountains.</h6>
+                            <p class="timeRead">3 min read</p>
+                        </a>
+                        <hr class="gray" />
+                        <a class="linkDecoration" href="#">
+                            <h5 class="heading">Track the latest atmospheric river to hit California.</h5>
+                        </a>
+                    </div>
+                    <div class="col-sm-8">
+                        <img src="https://static01.nyt.com/images/2023/03/14/multimedia/14nat-calif-storms-grid-bridge-fjmh/14nat-calif-storms-grid-bridge-fjmh-threeByTwoSmallAt2X.jpg?format=pjpg&quality=75&auto=webp&disable=upscale"
+                            class="widthImage">
+                    </div>
+                </div>
+
+                <hr class="gray" />
+
+                <div class="row">
+                    <div class="col">
+                        <a class="linkDecoration" href="#">
+                            <h5 class="heading">More levees in California have failed as atmospheric rivers and snowmelt
+                                test the river walls that protect millions.</h5>
+                            <p class="timeRead">5 min read</p>
+                        </a>
+                    </div>
+                    <div class="col rightColumn">
+                        <a class="linkDecoration" href="#">
+                            <h5 class="heading">A storm dropped two feet of snow in parts of Massachusetts, while other
+                                cities in the Northeast saw flurries or rain.</h5>
+                            <p class="timeRead">4 min read</p>
+                        </a>
+                    </div>
+                </div>
+
+                <hr class="black" />
+
+                <div class="row">
+                    <div class="col-sm-4">
+                        <a class="linkDecoration" href="#">
+                            <h5 class="heading">Her Doctor Said Her Illness Was in Her Head. She Looked for the Truth.
+                            </h5>
+                            <h6 class="subHeading">After enduring severe nausea and vomiting in pregnancy, a geneticist
+                                made finding the cause of her condition, hyperemesis gravidarum, her life’s work.</h6>
+                            <p class="timeRead">10 min read</p>
+                        </a>
+                    </div>
+                    <div class="col-sm-8">
+                        <img src="https://static01.nyt.com/images/2023/03/15/multimedia/00FEJZO-PROFILE2-gqbj/00FEJZO-PROFILE2-gqbj-threeByTwoSmallAt2X-v2.jpg?format=pjpg&quality=75&auto=webp&disable=upscale"
+                            class="widthImage">
+                    </div>
+                </div>
+
+
+            </div>
+
+            <!--Coluna Direita-->
+            <div class="col-sm-4 rightColumn">
+                <a class="linkDecoration" href="#">
+                    <video class="widthImage" autoplay muted
+                            src="https://vp.nyt.com/video/2023/03/10/106771_1_11tb-candy-stripers-prey_wg_720p.mp4"></video>
+                    <h5 class="heading">Eight-Legged Candy-Striper Killers Prowl Before the Sun Rises</h5>
+                    <h6 class="subHeading">A study of candy-striped spiders feasting on sleeping insects suggests there
+                        are
+                        many surprising arachnid behaviors still waiting to be discovered.</h6>
+                    <p class="timeRead">3 min read</p>
+                </a>
+
+                <hr class="gray" />
+
+                <div class="row">
+                    <div class="col">
+                        <a class="linkDecoration" href="#">
+                            <img src="https://static01.nyt.com/images/2023/03/13/multimedia/13xp-seaweed-bktm/13xp-seaweed-bktm-threeByTwoSmallAt2X.jpg?format=pjpg&quality=75&auto=webp&disable=upscale"
+                                class="widthImage">
+                            <h5 class="heading">A giant blob of seaweed is headed to Florida’s beaches, where it will
+                                then
+                                begin to rot and emit toxic fumes.</h5>
+                            <p class="timeRead">3 min read</p>
+                        </a>
+
+                    </div>
+                    <div class="col rightColumn">
+                        <a class="linkDecoration" href="#">
+                            <img src="https://static01.nyt.com/images/2023/03/09/multimedia/00xp-shipwreck-dress-05/00xp-shipwreck-dress-05-threeByTwoSmallAt2X.png?format=pjpg&quality=75&auto=webp&disable=upscale"
+                                class="widthImage">
+                            <h5 class="heading">This dress survived for more than three centuries at the bottom of the
+                                sea.
+                            </h5>
+                            <p class="timeRead"> min read</p>
+                        </a>
+
+                    </div>
+                </div>
+
+                <hr class="black">
+
+                <div class="container">
+                    <ul class="list-inline">
+                        <li class="list-inline-item menu">
+                            <a href="#" class="linkDecoration middlePageList" style="font-weight: bold;">Opinion</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="row">
+                    <div class="col-7">
+                        <a class="linkDecoration" href="#">
+                            <h6 class="author">Jessica Grose</h6>
+                            <h5 class="heading">This Isn’t What Middle Age Was Supposed to Look Like</h5>
+                            <p class="timeRead">14 min read</p>
+                        </a>
+                    </div>
+                    <div class="col-5">
+                        <a class="linkDecoration" href="#">
+                            <img src="https://static01.nyt.com/images/2023/03/14/opinion/sunday/14Grose/14Grose-square320.jpg?format=pjpg&quality=75&auto=webp&disable=upscale"
+                                class="widthImage">
+                        </a>
+                    </div>
+                </div>
+
+                <hr class="gray">
+
+                <div class="row">
+                    <div class="col-10">
+                        <a class="linkDecoration" href="#">
+                            <h6 class="author">Thomas L. Friedman</h6>
+                            <h5 class="heading">Putin and Netanyahu Show Why Bad Things Happen to Bad Leaders</h5>
+                            <p class="timeRead">6 min read</p>
+                        </a>
+                    </div>
+                    <div class="col-2">
+                        <a class="linkDecoration" href="#">
+                            <img src="https://static01.nyt.com/images/2018/04/02/opinion/thomas-l-friedman/thomas-l-friedman-thumbLarge.png?format=pjpg&quality=75&auto=webp&disable=upscale"
+                                class="authorImage">
+                        </a>
+                    </div>
+                </div>
+
+                <hr class="gray">
+
+                <a class="linkDecoration" href="#">
+                    <h6 class="author">The Editorial Board</h6>
+                    <h5 class="heading">How to Make This the Last Banking Bailout</h5>
+                    <p class="timeRead">4 min read</p>
+                </a>
+
+                <hr class="gray">
+
+                <div class="row">
+                    <div class="col-10">
+                        <a class="linkDecoration" href="#">
+                            <h6 class="author">Paul Krugman</h6>
+                            <h5 class="heading">How Bad Was the Silicon Valley Bank Bailout?</h5>
+                            <p class="timeRead">5 min read</p>
+                        </a>
+                    </div>
+                    <div class="col-2">
+                        <a class="linkDecoration" href="#">
+                            <img src="https://static01.nyt.com/images/2018/04/02/opinion/paul-krugman/paul-krugman-thumbLarge.png?format=pjpg&quality=75&auto=webp&disable=upscale"
+                                class="authorImage">
+                        </a>
+                    </div>
+                </div>
+
+                <hr class="gray">
+
+                <div class="row">
+                    <div class="col-10">
+                        <a class="linkDecoration" href="#">
+                            <h6 class="author">Jamelle Bouie</h6>
+                            <h5 class="heading">The Boys Who Cried ‘Woke!’</h5>
+                            <p class="timeRead">5 min read</p>
+                        </a>
+                    </div>
+                    <div class="col-2">
+                        <a class="linkDecoration" href="#">
+                            <img src="https://static01.nyt.com/images/2019/01/24/opinion/jamelle-bouie/jamelle-bouie-thumbLarge-v3.png?format=pjpg&quality=75&auto=webp&disable=upscale"
+                                class="authorImage">
+                        </a>
+                    </div>
+                </div>
+
+                <hr class="gray">
+
+                <div class="row">
+                    <div class="col-10">
+                        <a class="linkDecoration" href="#">
+                            <h6 class="author">Jane Coastone</h6>
+                            <h5 class="heading">The Debate Hugh Hefner Won and William Buckley Lost</h5>
+                            <p class="timeRead">7 min read</p>
+                        </a>
+                    </div>
+                    <div class="col-2">
+                        <a class="linkDecoration" href="#">
+                            <img src="https://static01.nyt.com/images/2021/02/23/admin/janecoastonauthorpic/janecoastonauthorpic-thumbLarge.png?format=pjpg&quality=75&auto=webp&disable=upscale"
+                                class="authorImage">
+                        </a>
+                    </div>
+                </div>
+                <img src="https://static01.nyt.com/images/2023/03/14/opinion/14coaston-1/14coaston-1-threeByTwoSmallAt2X.jpg?format=pjpg&quality=75&auto=webp&disable=upscale"
+                    class="widthImage">
+
+                <hr class="gray">
+
+                <a class="linkDecoration" href="#">
+                    <h6 class="author">Jordan Metzl</h6>
+                    <h5 class="heading">Working From Home Is Less Healthy Than You Think</h5>
+                    <p class="timeRead">5 min read</p>
+                </a>
+
+                <hr class="gray">
+
+                <a class="linkDecoration" href="#">
+                    <h6 class="author">Dara Lind</h6>
+                    <h5 class="heading">Biden Is Handling the Border the Way Trump Did, and There’s a Simple Reason for It</h5>
+                    <p class="timeRead">5 min read</p>
+                </a>
+
+                <div class="row">
+                    <div class="col">
+                        <a class="linkDecoration" href="#">
+                            <h6 class="author">‘The Ezra Klein Show’</h6>
+                            <h5 class="heading">How China Went From Economic Superstar to Faltering Giant</h5>
+                        </a>
+
+                    </div>
+                    <div class="col rightColumn">
+                        <a class="linkDecoration" href="#">
+                            <h6 class="author">Dona Upson</h6>
+                            <h5 class="heading">The Air My Patients Breathe Limits How Much I Can Help Them</h5>
+                            <p class="timeRead">4 min read</p>
+                        </a>
+
+                    </div>
+                </div>
+
+                <hr class="black">
+
+                <p style="font-weight: bold; font-size: 0.8rem; margin-bottom: 0;">In Case You Missed It</p>
+                <p style="font-style: italic; font-size: 0.75rem;">Top picks from The Times, recommended for you</p>
+
+                <div class="row">
+                    <div class="col-7">
+                        <a class="linkDecoration" href="#">
+                            <h5 class="heading">Russians Alter Life for Countries That Took Them In</h5>
+                            <p class="timeRead">4 min read</p>
+                        </a>
+                    </div>
+                    <div class="col-5">
+                        <a class="linkDecoration" href="#">
+                            <img src="https://static01.nyt.com/images/2023/01/27/world/europe/SP01/SP01-square320.jpg?format=pjpg&quality=75&auto=webp&disable=upscale"
+                                class="widthImage">
+                        </a>
+                    </div>
+                </div>
+
+                <hr class="gray">
+
+                <div class="row">
+                    <div class="col-7">
+                        <a class="linkDecoration" href="#">
+                            <h5 class="heading">When Trump Passes the MAGA Hat, His Aides Clutch Their Wallets</h5>
+                            <p class="timeRead">6 min read</p>
+                        </a>
+                    </div>
+                    <div class="col-5">
+                        <a class="linkDecoration" href="#">
+                            <img src="https://static01.nyt.com/images/2023/03/08/multimedia/08pol-trump-money-kbhv/08pol-trump-money-kbhv-square320.jpg?format=pjpg&quality=75&auto=webp&disable=upscale"
+                                class="widthImage">
+                        </a>
+                    </div>
+                </div>
+
+                <hr class="gray">
+
+                <div class="row">
+                    <div class="col-7">
+                        <a class="linkDecoration" href="#">
+                            <h5 class="heading">A Colorado Ski Area With No Lift Lines?</h5>
+                            <p class="timeRead">7 min read</p>
+                        </a>
+                    </div>
+                    <div class="col-5">
+                        <a class="linkDecoration" href="#">
+                            <img src="https://static01.nyt.com/images/2023/03/01/multimedia/00travel-bluebird-cpqz/00travel-bluebird-cpqz-square320.jpg?format=pjpg&quality=75&auto=webp&disable=upscale"
+                                class="widthImage">
+                        </a>
+                    </div>
+                </div>
+
+                <hr class="gray">
+
+                <div class="row">
+                    <div class="col-7">
+                        <a class="linkDecoration" href="#">
+                            <h5 class="heading">Bob Dylan, at 81, Still Gives the Camera What It Wants</h5>
+                            <p class="timeRead">7 min read</p>
+                        </a>
+                    </div>
+                    <div class="col-5">
+                        <a class="linkDecoration" href="#">
+                            <img src="https://static01.nyt.com/images/2023/03/09/fashion/09DYLAN-AD-02/09DYLAN-AD-02-square320.jpg?format=pjpg&quality=75&auto=webp&disable=upscale"
+                                class="widthImage">
+                        </a>
+                    </div>
+                </div>
+
+                <hr class="gray">
+
+                <div class="row">
+                    <div class="col-7">
+                        <a class="linkDecoration" href="#">
+                            <h5 class="heading">Pythons, Invasive and Hungry, Are Making Their Way North in Florida</h5>
+                            <p class="timeRead">5 min read</p>
+                        </a>
+                    </div>
+                    <div class="col-5">
+                        <a class="linkDecoration" href="#">
+                            <img src="https://static01.nyt.com/images/2023/03/13/multimedia/00nat-florida-python-btcp/00nat-florida-python-btcp-square320-v2.jpg?format=pjpg&quality=75&auto=webp&disable=upscale"
+                                class="widthImage">
+                        </a>
+                    </div>
+                </div>
+
+                <hr class="black">
+
+                <div class="row">
+                    <div class="col-7">
+                        <a class="linkDecoration" href="#">
+                            <h5 class="heading">Read the Evening Briefing</h5>
+                            <h6 class="subHeading">U.S. officials say a Russian warplane struck an American drone, shares of midsize banks rebound and other things you need to know.</h6>
+                            <p class="timeRead">5 min read</p>
+                        </a>
+                    </div>
+                    <div class="col-5">
+                        <a class="linkDecoration" href="#">
+                            <img src="https://static01.nyt.com/images/2019/11/08/briefing/xxbriefingicons-slide-6F6C/xxbriefingicons-slide-6F6C-square320.jpg?format=pjpg&amp;quality=75&amp;auto=webp&amp;disable=upscale"
+                                class="widthImage">
+                        </a>
+                    </div>
+                </div>
+
+                <hr class="gray">
+
+                <div class="row">
+                    <div class="col-7">
+                        <a class="linkDecoration" href="#">
+                            <h5 class="heading">Read the Climate Forward Newsletter</h5>
+                            <h6 class="subHeading">Huge profits and higher demand have empowered the oil industry. Here’s what that might mean.</h6>
+                            <p class="timeRead">6 min read</p>
+                        </a>
+                    </div>
+                    <div class="col-5">
+                        <a class="linkDecoration" href="#">
+                            <img src="https://static01.nyt.com/images/2022/08/30/multimedia/climate-forward-nl-icon/climate-forward-nl-icon-square320.jpg?format=pjpg&amp;quality=75&amp;auto=webp&amp;disable=upscale"
+                                class="widthImage">
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    </div>
+
+
+</body>
+
+
+<footer>
+    <!--Menu Inferior-->
+    <div class="container">
+        <hr class="doublegray" />
+        <img src="https://upload.wikimedia.org/wikipedia/commons/7/77/The_New_York_Times_logo.png" style="width: 15%;">
+        <div class="row">
+            <div class="col-sm-2">
+                <h6 class="font-weight-bold" style="line-height: 160%;">News
+                    <br>
+                    <small><a href="#" class="text-dark">Home Page</a></small>
+                    <br>
+                    <small><a href="#" class="text-dark">World</a></small>
+                    <br>
+                    <small><a href="#" class="text-dark">Coronavirus</a></small>
+                    <br>
+                    <small><a href="#" class="text-dark">U.S.</a></small>
+                    <br>
+                    <small><a href="#" class="text-dark">Politics</a></small>
+                    <br>
+                    <small><a href="#" class="text-dark">New York</a></small>
+                    <br>
+                    <small><a href="#" class="text-dark">Bussines</a></small>
+                    <br>
+                    <small><a href="#" class="text-dark">Tech</a></small>
+                    <br>
+                    <small><a href="#" class="text-dark">Science</a></small>
+                    <br>
+                    <small><a href="#" class="text-dark">Sports</a></small>
+                    <br>
+                    <small><a href="#" class="text-dark">Wildfire Tracker</a></small>
+                    <br>
+                    <small><a href="#" class="text-dark">Obituaries</a></small>
+                    <br>
+                    <small><a href="#" class="text-dark">Today's Paper</a></small>
+                    <br>
+                    <small><a href="#" class="text-dark">Corrections</a></small>
+                    <br>
+                    <small><a href="#" class="text-dark">Trending</a></small>
+                </h6>
+            </div>
+            <div class="col-sm-2">
+                <h6 class="font-weight-bold" style="line-height: 160%;">Opinion
+                    <br>
+                    <small><a href="#" class="text-dark">Today's Opinion</a></small>
+                    <br>
+                    <small><a href="#" class="text-dark">Columnists</a></small>
+                    <br>
+                    <small><a href="#" class="text-dark">Editorials</a></small>
+                    <br>
+                    <small><a href="#" class="text-dark">Guest Essays</a></small>
+                    <br>
+                    <small><a href="#" class="text-dark">Letters</a></small>
+                    <br>
+                    <small><a href="#" class="text-dark">Sunday Opinion</a></small>
+                    <br>
+                    <small><a href="#" class="text-dark">Opinion Video</a></small>
+                </h6>
+            </div>
+            <div class="col-sm-2">
+                <h6 class="font-weight-bold" style="line-height: 160%;">Arts
+                    <br>
+                    <small><a href="#" class="text-dark">Today's Arts</a></small>
+                    <br>
+                    <small><a href="#" class="text-dark">Art & Design</a></small>
+                    <br>
+                    <small><a href="#" class="text-dark">Books</a></small>
+                    <br>
+                    <small><a href="#" class="text-dark">Best Sellers Book List</a></small>
+                    <br>
+                    <small><a href="#" class="text-dark">Dance</a></small>
+                    <br>
+                    <small><a href="#" class="text-dark">Movies</a></small>
+                    <br>
+                    <small><a href="#" class="text-dark">Music</a></small>
+                    <br>
+                    <small><a href="#" class="text-dark">Pop Culture</a></small>
+                    <br>
+                    <small><a href="#" class="text-dark">Science</a></small>
+                    <br>
+                    <small><a href="#" class="text-dark">Television</a></small>
+                    <br>
+                    <small><a href="#" class="text-dark">Theater</a></small>
+                    <br>
+                    <small><a href="#" class="text-dark">Video: Arts</a></small>
+                </h6>
+            </div>
+            <div class="col-sm-2">
+                <h6 class="font-weight-bold" style="line-height: 160%;">Living
+                    <br>
+                    <small><a href="#" class="text-dark">Automative</a></small>
+                    <br>
+                    <small><a href="#" class="text-dark">Games</a></small>
+                    <br>
+                    <small><a href="#" class="text-dark">Education</a></small>
+                    <br>
+                    <small><a href="#" class="text-dark">Food</a></small>
+                    <br>
+                    <small><a href="#" class="text-dark">Health</a></small>
+                    <br>
+                    <small><a href="#" class="text-dark">Jobs</a></small>
+                    <br>
+                    <small><a href="#" class="text-dark">Love</a></small>
+                    <br>
+                    <small><a href="#" class="text-dark">Magazine</a></small>
+                    <br>
+                    <small><a href="#" class="text-dark">Parenting</a></small>
+                    <br>
+                    <small><a href="#" class="text-dark">Real Estate</a></small>
+                    <br>
+                    <small><a href="#" class="text-dark">Style</a></small>
+                    <br>
+                    <small><a href="#" class="text-dark">T Magazine</a></small>
+                    <br>
+                    <small><a href="#" class="text-dark">Travel</a></small>
+                </h6>
+            </div>
+            <div class="col-sm-2">
+                <h6 class="font-weight-bold" style="line-height: 160%;">More
+                    <br>
+                    <small><a href="#" class="text-dark">Reader Center</a></small>
+                    <br>
+                    <small><a href="#" class="text-dark">The Athletic</a></small>
+                    <br>
+                    <small><a href="#" class="text-dark">Wirecutter</a></small>
+                    <br>
+                    <small><a href="#" class="text-dark">Cooking</a></small>
+                    <br>
+                    <small><a href="#" class="text-dark">HEadway</a></small>
+                    <br>
+                    <small><a href="#" class="text-dark">Live Events</a></small>
+                    <br>
+                    <small><a href="#" class="text-dark">The Learning Network</a></small>
+                    <br>
+                    <small><a href="#" class="text-dark">Tools & Services</a></small>
+                    <br>
+                    <small><a href="#" class="text-dark">Podcasts</a></small>
+                    <br>
+                    <small><a href="#" class="text-dark">Video</a></small>
+                    <br>
+                    <small><a href="#" class="text-dark">Graphics</a></small>
+                    <br>
+                    <small><a href="#" class="text-dark">TimesMachine</a></small>
+                    <br>
+                    <small><a href="#" class="text-dark">Times Store</a></small>
+                    <br>
+                    <small><a href="#" class="text-dark">Manage My Account</a></small>
+                    <br>
+                    <small><a href="#" class="text-dark">NYTLicensing</a></small>
+                </h6>
+            </div>
+            <div class="col-sm-2" style="border-left: 1px solid rgb(226, 226, 226);">
+                <h6 class="font-weight-bold" style="line-height: 160%;">Subscribe
+                    <br>
+                    <small><a href="#" class="text-dark font-weight-bold">Home Delivery</a></small>
+                    <br>
+                    <small><a href="#" class="text-dark font-weight-bold">Digital Subscriptions</a></small>
+                    <br>
+                    <small><a href="#" class="text-dark font-weight-bold">Games</a></small>
+                    <br>
+                    <small><a href="#" class="text-dark font-weight-bold">Cookings</a></small>
+                    <br>
+                    <small><a href="#" class="text-dark">Email Newsletters</a></small>
+                    <br>
+                    <small><a href="#" class="text-dark">Corporate Subscriptions</a></small>
+                    <br>
+                    <small><a href="#" class="text-dark">Education Rate</a></small>
+                    <hr class="gray" />
+                    <small><a href="#" class="text-dark">Mobile Applicaitons</a></small>
+                    <br>
+                    <small><a href="#" class="text-dark">Replica Edition</a></small>
+                    <br>
+                    <small><a href="#" class="text-dark">International</a></small>
+                    <br>
+                    <small><a href="#" class="text-dark">Canada</a></small>
+                    <br>
+                    <small><a href="#" class="text-dark">Español</a></small>
+                    <br>
+                    <small><a href="#" class="text-dark">中文网</a></small>
+                </h6>
+            </div>
+        </div>
+
+        <hr class="gray" />
+
+        <div class="container">
+
+            <ul class="list-inline" style="text-align: center;">
+                <li class="list-inline-item menu">
+                    <a href="#" class="list-inline-item text-muted" style="font-size: x-small;">© 2023 The New York
+                        Times Company</a>
+                </li>
+                <li class="list-inline-item menu">
+                    <a href="#" class="list-inline-item text-muted" style="font-size: x-small;">NYTCo</a>
+                </li>
+                <li class="list-inline-item menu">
+                    <a href="#" class="list-inline-item text-muted" style="font-size: x-small;">Contact Us</a>
+                </li>
+                <li class="list-inline-item menu">
+                    <a href="#" class="list-inline-item text-muted" style="font-size: x-small;">Acessibility</a>
+                </li>
+                <li class="list-inline-item menu">
+                    <a href="#" class="list-inline-item text-muted" style="font-size: x-small;">Work with us</a>
+                </li>
+                <li class="list-inline-item menu">
+                    <a href="#" class="list-inline-item text-muted" style="font-size: x-small;">Advertise</a>
+                </li>
+                <li class="list-inline-item menu">
+                    <a href="#" class="list-inline-item text-muted" style="font-size: x-small;">T Brand Studio</a>
+                </li>
+                <li class="list-inline-item menu">
+                    <a href="#" class="list-inline-item text-muted" style="font-size: x-small;">Your Ad Choices</a>
+                </li>
+                <li class="list-inline-item menu">
+                    <a href="#" class="list-inline-item text-muted" style="font-size: x-small;">Privacy Policy</a>
+                </li>
+                <li class="list-inline-item menu">
+                    <a href="#" class="list-inline-item text-muted" style="font-size: x-small;">Terms of Service</a>
+                </li>
+                <li class="list-inline-item menu">
+                    <a href="#" class="list-inline-item text-muted" style="font-size: x-small;">Terms of sale</a>
+                </li>
+                <li class="list-inline-item menu">
+                    <a href="#" class="list-inline-item text-muted" style="font-size: x-small;">Site Map</a>
+                </li>
+                <li class="list-inline-item menu">
+                    <a href="#" class="list-inline-item text-muted" style="font-size: x-small;">Help</a>
+                </li>
+                <li class="list-inline-item menu">
+                    <a href="#" class="list-inline-item text-muted" style="font-size: x-small;">Subscriptions</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+</footer>
+
+
+
+</html>
